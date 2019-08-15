@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FGn-O9-xJc">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--PokeBall-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DrawingStuff" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vMz-c5-Sxt" customClass="PokeballView" customModule="DrawingStuff" customModuleProvider="target">
-                                <rect key="frame" x="10.5" y="256.5" width="393" height="393"/>
+                                <rect key="frame" x="10.5" y="278.5" width="393" height="393"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="vMz-c5-Sxt" secondAttribute="height" multiplier="1:1" id="QSW-PY-Bbi"/>
@@ -34,9 +34,63 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="PokeBall" id="k5g-h6-M9I">
+                        <barButtonItem key="rightBarButtonItem" title="Lambda" id="d2g-mH-JwH">
+                            <connections>
+                                <segue destination="g2h-VA-gbV" kind="show" id="FzD-fT-DCs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="957.97101449275374" y="20.758928571428569"/>
+        </scene>
+        <!--Lambda-->
+        <scene sceneID="MFG-Sn-vmo">
+            <objects>
+                <viewController id="g2h-VA-gbV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="beI-6d-u6A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UcI-E8-CUQ" customClass="LambdaView" customModule="DrawingStuff" customModuleProvider="target">
+                                <rect key="frame" x="41.5" y="309.5" width="331" height="331"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UcI-E8-CUQ" firstAttribute="centerX" secondItem="Hb5-yv-434" secondAttribute="centerX" id="0NF-5S-O1W"/>
+                            <constraint firstItem="UcI-E8-CUQ" firstAttribute="width" secondItem="beI-6d-u6A" secondAttribute="width" multiplier="0.8" id="CHc-dT-0jG"/>
+                            <constraint firstItem="UcI-E8-CUQ" firstAttribute="width" secondItem="UcI-E8-CUQ" secondAttribute="height" multiplier="1:1" id="a83-NU-8ub"/>
+                            <constraint firstItem="UcI-E8-CUQ" firstAttribute="centerY" secondItem="Hb5-yv-434" secondAttribute="centerY" id="uNL-Kq-Nxs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Hb5-yv-434"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lambda" id="gCx-GD-ICr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o3T-ah-EsD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1839" y="21"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="svH-GH-TWX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FGn-O9-xJc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4a5-kp-mQj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JZU-HB-83K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T9s-Nz-Wpn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="21"/>
         </scene>
     </scenes>
 </document>

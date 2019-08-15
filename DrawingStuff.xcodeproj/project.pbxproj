@@ -13,6 +13,7 @@
 		B5F5C3D02305E2580052DF80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F5C3CF2305E2580052DF80 /* Assets.xcassets */; };
 		B5F5C3D32305E2580052DF80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F5C3D12305E2580052DF80 /* LaunchScreen.storyboard */; };
 		B5F5C3DB2305E42C0052DF80 /* PokeballView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F5C3DA2305E42C0052DF80 /* PokeballView.swift */; };
+		B5F5C3DD2305FA990052DF80 /* LambdaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F5C3DC2305FA990052DF80 /* LambdaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B5F5C3D22305E2580052DF80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5F5C3D42305E2580052DF80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5F5C3DA2305E42C0052DF80 /* PokeballView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeballView.swift; sourceTree = "<group>"; };
+		B5F5C3DC2305FA990052DF80 /* LambdaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LambdaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				B5F5C3C82305E2540052DF80 /* AppDelegate.swift */,
 				B5F5C3CA2305E2540052DF80 /* ViewController.swift */,
 				B5F5C3DA2305E42C0052DF80 /* PokeballView.swift */,
+				B5F5C3DC2305FA990052DF80 /* LambdaView.swift */,
 				B5F5C3CC2305E2540052DF80 /* Main.storyboard */,
 				B5F5C3CF2305E2580052DF80 /* Assets.xcassets */,
 				B5F5C3D12305E2580052DF80 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				B5F5C3CB2305E2540052DF80 /* ViewController.swift in Sources */,
 				B5F5C3C92305E2540052DF80 /* AppDelegate.swift in Sources */,
 				B5F5C3DB2305E42C0052DF80 /* PokeballView.swift in Sources */,
+				B5F5C3DD2305FA990052DF80 /* LambdaView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
