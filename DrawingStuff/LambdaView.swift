@@ -28,6 +28,7 @@ class LambdaView: UIView {
 	override func draw(_ rect: CGRect) {
 		guard let context = UIGraphicsGetCurrentContext() else { return }
 		
+		//HomePlate
 		context.beginPath()
 		context.addLines(between: [
 				CGPoint(x: 0, y: 0),
@@ -40,11 +41,12 @@ class LambdaView: UIView {
 		context.closePath()
 		context.fillPath()
 		
+		//Lambda letter
 		context.beginPath()
 		context.addLines(between: [
-				CGPoint(x: rect.width * 0.25, y: rect.height * 0.55),
+				CGPoint(x: rect.width * 0.3, y: rect.height * 0.55),
 				CGPoint(x: rect.midX, y: rect.height * 0.2),
-				CGPoint(x: rect.width * 0.75, y: rect.height * 0.55)
+				CGPoint(x: rect.width * 0.7, y: rect.height * 0.55)
 			])
 		context.setLineCap(.round)
 		context.setLineJoin(.bevel)
